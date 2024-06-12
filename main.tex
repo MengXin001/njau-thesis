@@ -1,0 +1,60 @@
+\documentclass{thesis}
+
+\input{setup.tex}
+
+\title{南京农业大学本科学位论文}
+{ \LaTeX 模板示例文档}{A Sample Document for \LaTeX-based NJAU Thesis Template}
+\college{公共管理学院}
+\major{数学与应用数学}
+\class{数学 114}
+\studentnumber{114514191}
+\author{ \LaTeX }
+\advisor{ \LaTeX }
+\advisortitle{副教授}
+
+\begin{document}
+
+\makecover
+
+\copyrightpage
+
+\pagenumbering{Roman}%中英文摘要要求使用罗马数字
+\input{chapters/Abstract.tex}
+\pagenumbering{arabic}
+
+\tableofcontents
+
+\mainpart
+
+\section{文献综述}
+\input{chapters/Introductions.tex}
+
+\section{数学}
+\input{chapters/Chapter_Math.tex}
+
+\section{图片与引用}
+Front identification at the surface is important for defining WRs and
+FRs. Generally, front identification is based on the gradient of ground or
+low-level meteorological elements. The inclining feature of fronts together with the hilly terrain in South China make objective front
+identification quite difficult. Therefore, in this paper, the locations of
+fronts are analyzed by forecasters who subjectively locate fronts using a
+combination of temperature and wind observations in the surface and
+925-hPa layers. Specifically, if a front is strong (clear) enough in the
+surface analyses, we locate the fronts based on the hourly surface observations (mainly by significant temperature gradients). Otherwise, we
+determine the fronts mainly based on the 925-hPa directional wind
+shear (significant difference in wind direction) and temperature gradients\cite{WU2020104693}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{1-s2.0-S0169809519302285-gr1.jpg}
+	\caption{Distributions of precipitation and the circulation situation at (a, c) 0800 LST on 10 May 2014 and (b, d) 0800 LST on 18 May 2014: (a, b) 925-hPa wind field (each bar represents 4 m/s) and cumulative precipitation in the past 24 h (shaded, mm); (c, d) vertical circulation along 113°E, meridional wind (shaded, m/s) and potential pseudo-equivalent temperature (contoured every 3 K). The solid brown lines and dotted blue lines in (a, b) identify the positions of the shear lines and 113°E, respectively. The solid squares and triangles in (c, d) are the latitudinal position of the precipitation areas and the fronts, respectively.}
+    \label{fig:1}
+\end{figure}
+
+\section{结论与展望}
+\input{chapters/Perspectives.tex}
+
+\acknowledgement
+\input{chapters/Acknowledgments.tex}
+
+\thesisreferences
+\end{document}

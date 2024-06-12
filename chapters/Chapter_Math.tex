@@ -1,0 +1,43 @@
+\subsection{数字和单位}
+
+\begin{itemize}
+    \item \unit{\mu}
+    \item \unit{\eta}
+    \item \unit{\lambda}
+    \item \unit{\xi}
+\end{itemize}
+
+\subsection{数学符号和公式}
+
+\begin{equation}
+    \vec{F}=m\frac{d\vec{v}}{dt}+\vec{v}\frac{dm}{dt}
+\end{equation}
+
+\subsection{证明}
+\begin{proposition}
+    Suppose $f$ is integrable on $\mathbb{R}^d$. Then for every $\epsilon > 0$:
+    \begin{enumerate}
+        \renewcommand{\theenumi}{\roman{enumi}}
+        \item There exists a set of finite measure $B$ (a ball, for example) such
+              that
+              \begin{equation}
+                  \int_{B^c} |f| < \epsilon.
+              \end{equation}
+        \item There is a $\delta > 0$ such that
+              \begin{equation}
+                  \int_E |f| < \epsilon \qquad \text{whenever } m(E) < \delta.
+              \end{equation}
+    \end{enumerate}
+\end{proposition}
+\begin{theorem}
+    Suppose $\{f_n\}$ is a sequence of measurable functions such that
+    $f_n(x) \to f(x)$ a.e. $x$, as $n$ tends to infinity.
+    If $|f_n(x)| \le g(x)$, where $g$ is integrable, then
+    \begin{equation}
+        \int |f_n - f| \to 0 \qquad \text{as } n \to \infty,
+    \end{equation}
+    and consequently
+    \begin{equation}
+        \int f_n \to \int f \qquad \text{as } n \to \infty.
+    \end{equation}
+\end{theorem}
